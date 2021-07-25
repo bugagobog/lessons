@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+span {
+    color: $secondary-color;
+}
+.container {
+    @include desctop-container;
+}
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    min-width: 320px;
+    background: #fff;
+    font-family: "Lato", sans-serif;
+}

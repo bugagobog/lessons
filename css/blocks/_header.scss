@@ -1,0 +1,43 @@
+.header_wrapper {
+    background-color: #222222;
+    .header {
+        @include desctop-container;
+        @include flex-sb;
+        .header__right-menu {
+            display: flex;
+            &-search-item {
+                margin-left: 41px;
+                margin-top: 28.21px;
+                margin-bottom: 20px;
+            }
+            &-logo-item {
+                margin-top: 18px;
+                margin-bottom: 19px;
+            }
+        }
+        .header__left-menu {
+            display: flex;
+            &-burger-item {
+                margin-top: 30px;
+                margin-bottom: 22px;
+                margin-right: 33px;
+            }
+            &-login-item {
+                margin-top: 26px;
+                margin-bottom: 20px;
+                margin-right: 33px;
+            }
+            .header__cart-group {
+                margin-top: 26px;
+                margin-bottom: 20px;
+                .cart-ellipse {
+                    position: absolute;
+                    background-color: $secondary-color;
+                    border-radius: 25px;
+                    margin-top: -37px;
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+}
