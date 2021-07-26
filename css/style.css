@@ -1111,8 +1111,8 @@ a {
 }
 
 .cart-content__product_inner:hover {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
   -webkit-transition: 1s;
   transition: 1s;
 }
