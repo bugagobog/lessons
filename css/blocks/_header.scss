@@ -5,10 +5,14 @@
         @include flex-sb;
         .header__right-menu {
             display: flex;
-            &-search-item {
+            &-search-item svg {
                 margin-left: 41px;
                 margin-top: 28.21px;
+                fill: white;
                 margin-bottom: 20px;
+                &:hover {
+                    fill: $secondary-color;
+                }
             }
             &-logo-item {
                 margin-top: 18px;
@@ -18,24 +22,41 @@
         .header__left-menu {
             display: flex;
             &-burger-item {
+                fill: white;
                 margin-top: 30px;
                 margin-bottom: 22px;
                 margin-right: 33px;
+                &:hover {
+                    fill: $secondary-color;
+                }
             }
-            &-login-item {
+            &-login-item svg {
                 margin-top: 26px;
                 margin-bottom: 20px;
                 margin-right: 33px;
+                fill: white;
+                &:hover {
+                    fill: $secondary-color;
+                }
             }
-            .header__cart-group {
+            .header__cart-group svg {
+                position: relative;
                 margin-top: 26px;
                 margin-bottom: 20px;
+                fill: white;
+                &:hover {
+                    fill: $secondary-color;
+                }
                 .cart-ellipse {
                     position: absolute;
+                    right: 0;
+                    top: 0;
+                    margin-right: -7px;
+                    margin-top: -7px;
                     background-color: $secondary-color;
-                    border-radius: 25px;
-                    margin-top: -37px;
-                    margin-left: 20px;
+                    border-radius: 50%;
+                    width: 20px;
+                    text-align: center;
                 }
             }
         }
