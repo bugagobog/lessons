@@ -1,0 +1,163 @@
+.footer-top {
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &__bcg {
+        background-color: black;
+    }
+    &__item {
+        display: flex;
+        width: 300px;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    &__img-truck {
+        align-self: center;
+        height: 31.9345703125px;
+        width: 44.98904037475586px;
+        margin-top: 103px;
+        margin-bottom: 28.07px;
+    }
+    &__img-crown {
+        align-self: center;
+        height: 34.9267578125px;
+        width: 47.023048400878906px;
+        margin-top: 104px;
+        margin-bottom: 25.08px;
+    }
+    &__img-sale {
+        align-self: center;
+        height: 39.923828125px;
+        width: 39.98602294921875px;
+        margin-top: 103px;
+        margin-bottom: 19.07px;
+    }
+    &__title {
+        color: #fbfbfb;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+        @include font_common-params_normal;
+    }
+    &__content {
+        color: #fbfbfb;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 17px;
+        @include font_common-params_normal;
+        margin-top: 18px;
+        margin-bottom: 104px;
+    }
+}
+.footer-bottom {
+    background-color: black;
+    &__row {
+        @include flex-sb;
+    }
+    &__text {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 16px;
+        color: #fbfbfb;
+        text-align: left;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    &__social-box {
+        display: flex;
+        height: 32px;
+        width: 170px;
+    }
+    &__social {
+        position: relative;
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 24px;
+        margin-top: 24px;
+        margin-left: 3px;
+        text-align: center;
+        width: 32px;
+        height: 32px;
+        background-color: white;
+        &:hover {
+            background-color: $secondary-color;
+        }
+        &::before {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
+
+.footer-middle {
+    display: flex;
+    justify-content: space-between;
+    &__bcg {
+        background-image: url(../../img/footer/footer__bcg.jpg);
+        background-repeat: no-repeat;
+        background-color: lightgrey;
+        background-size: cover;
+        background-position: left bottom;
+        min-height: 448px;
+    }
+    &__face {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 360px;
+        padding-top: 85px;
+        &-content {
+            margin-top: 30px;
+            font-size: 20px;
+            line-height: 24px;
+            text-align: center;
+            color: #222224;
+        }
+    }
+    &__subscribe {
+        width: 360px;
+        padding-top: 150px;
+        display: flex;
+        flex-direction: column;
+        &-input {
+            font-size: 14px;
+            line-height: 17px;
+            color: #222224;
+            opacity: 0.67;
+            background: #e1e1e1;
+            padding: 14px 22px 14px 22px;
+            border-radius: 20px 0 0 20px;
+            border: none;
+        }
+        &-button {
+            font-size: 14px;
+            line-height: 17px;
+            text-align: center;
+            color: #ffffff;
+            background-color: $secondary-color;
+            padding: 14px 20px 14px 20px;
+            border-radius: 0 20px 20px 0;
+            border: none;
+        }
+        &-text {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 40px;
+            text-align: center;
+            color: #222224;
+            margin-bottom: 32px;
+            &__-mini {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 30px;
+            }
+        }
+    }
+    &__subscribed {
+        display: flex;
+    }
+}
